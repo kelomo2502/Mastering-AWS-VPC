@@ -6,7 +6,7 @@ This focuses on AWS vpc infrastructure, including subnets, gateways and routing 
 
 ## Setting up a VPC
 
-- Sign into AWS account
+Sign into AWS account
 
 ![Sign into aws account](./images/sign_into_aws_account.png)
 
@@ -16,6 +16,17 @@ This focuses on AWS vpc infrastructure, including subnets, gateways and routing 
 - Navigate to create VPC tab and click on it
   ![Create VPC](./images/create_vpc.png)
 
-- Select VPC only option, specify the ipv4 CIDR block 
+- Select VPC only option, specify the ipv4 CIDR block and Create VPC
+![VPC created](./images/vpc_creted.png)
 
+## Creating Subnets
 
+- Locate the subnet tab and click on create subnet
+  ![Locate create subnet tab](./images/locate_subnet_tab.png)
+
+- Choose the id the vpc you created previously, enter the subnet name, specify ipv4 CIDR for the subnet
+![Configuring the subnet](./images/configuring_the_subnet.png)
+
+- Creating the subnet
+  To create the subnet, first click on the add new subnet button
+![Add new subnet](./images/add-new-subnet.png)
