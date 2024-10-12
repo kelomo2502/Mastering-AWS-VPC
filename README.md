@@ -80,3 +80,22 @@ Two subnets have been created successfully. If you have CIDR overlaps, try resol
 ![Choose private conncectivity](./images/private_connectivity.png)
 - Click on create NAT Gateway
 ![Create NAT gwy](./images/create_NAT_gwy.png)
+- NAT gwy successfully created
+![NATgwy successfully created](./images/NATgwy_successful.png)
+- Select the NATgwy
+- Navigate to details tab
+- From there, locate the subnet on the nat gwy and click on it
+![Back to subnet page](./images/subnet_page.png)
+- navigate to the route table
+![Go to route table](./images/route_table.png)
+- Click on the routable ID
+- Click on Edit route tab
+![Edit route](./images/edit_route.png)
+- Click on add route
+- Set destination as 0.0.0.0/0 and target field as NAT gateway and then Choose the nat gwy you created
+![setup private subnet and nat](./images/correct_nat_route_setup.png)
+- Click save changes
+- On the subnet assossiation section, select edit subnet association
+![Subnet association](./images/subnet_association.png)
+- Choosw the private subnet and click save assosiation
+![](./images/chose_network_association.png)
