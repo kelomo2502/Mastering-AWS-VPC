@@ -51,3 +51,32 @@ Two subnets have been created successfully. If you have CIDR overlaps, try resol
 
 - Click on create route table
 ![](./images/creating-route-table.png)
+
+- Link the route table to vpc created
+![Link RT to VPC](./images/Link_RT_VPC.png)
+- After selecting VPC associated with intended RT, click on create route table
+![Create RT](./images/create_RT.png)
+- Click on subnet association
+![Click on subnet association](./images/subnet_association.png)
+- Choose the public subnet and click save
+![Subnet association setup](./images/subnet_assocaition_setup.png)
+- navigate to routes and click edit routes
+![navigate to routes](./images/navigate_to_routes.png)
+- Click on add route
+![Add route tab](./images/Add_route.png)
+- Set destination to 0.0.0.0/0 then select internet gateway.
+  the route table has now been configured to route traffic to the internet gateway. Since its only the public subnet that is associated with this route table, only resoures within this subnet can access the internet
+
+## Enabling outbound internet access via NAT gateway
+- Navigate to the NAT Gateway section and find Create NAT gateway
+![Nat gateway tab](./images/nata-gateway_tab.png)
+- Click on create Nat gateway
+![Create nat button](./images/create_nat.png)
+- Give the Nategwy a name/tag
+![Naming Natgwy ](./images/nat_naming.png)
+- Choose the subnet .i.e the private subnet
+![Choosing the subnet](./images/choose_the_subnet.png)
+- Choose the connectivity type as private
+![Choose private conncectivity](./images/private_connectivity.png)
+- Click on create NAT Gateway
+![Create NAT gwy](./images/create_NAT_gwy.png)
