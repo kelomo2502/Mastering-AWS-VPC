@@ -35,6 +35,7 @@ Two subnets have been created successfully. If you have CIDR overlaps, try resol
 ![Succesfully create subnets](./images/successfully_create_subnets.png)
 
 ## Creating Internet Gateway
+
 - Navigate to the internet gateway options on the left side bar
 ![Navigating to IGW tab](./images/finding_the_igw_tab.png)
 - Click on create internet gateway
@@ -46,6 +47,7 @@ Two subnets have been created successfully. If you have CIDR overlaps, try resol
 ![Attch igw to vpc ](./images/attch_igw_to_vpc.png)
 
 ## Enabling internet connectivity by setting up route tables
+
 - Proceed to route tables option tab in th aws console
 ![Locating route tables tab](./images/locating_route_table.png)
 
@@ -68,6 +70,7 @@ Two subnets have been created successfully. If you have CIDR overlaps, try resol
   the route table has now been configured to route traffic to the internet gateway. Since its only the public subnet that is associated with this route table, only resoures within this subnet can access the internet
 
 ## Enabling outbound internet access via NAT gateway
+
 - Navigate to the NAT Gateway section and find Create NAT gateway
 ![Nat gateway tab](./images/nata-gateway_tab.png)
 - Click on create Nat gateway
@@ -98,4 +101,32 @@ Two subnets have been created successfully. If you have CIDR overlaps, try resol
 - On the subnet assossiation section, select edit subnet association
 ![Subnet association](./images/subnet_association.png)
 - Choosw the private subnet and click save assosiation
-![](./images/chose_network_association.png)
+![Save subnet assossiation](./images/chose_network_association.png)
+
+## VPC PEERING
+
+- Create two other VPC in thesame region
+- Navigate to peering connection on the sidebar
+- Click it and you will be directed to VPC peering page
+![VPC peering page](./images/vpc_peering_page.png)
+- Click on create peering connection
+- Provide a name for the VPC peering connection
+- Select the requesterVPC
+- Ensure to choose thesame region in this case since they were both created in thesame region
+- Next select the accepterVPC
+- Then click create peering connection
+- In the peering connection, locate action option on the right side where you you can either accept or reject the connection request
+![Connection request](./images/connection_request.png)
+- Click on accept request
+- Click on the main rout table ID of the accepter VPC
+- Choose the route table and click and click the route tab
+- Then click on edit routes button
+- Click add route
+- Go to VPC page and locate the requester VPC
+- Copy the requesterVPC CIDR and paste in the destination field when adding a route and choose the target as peering connection
+- Click save changes
+- Copy CIDR of the accepterVPC
+- Now click on the main route table ID of the requesterVPC
+- Paste the CIDR in the destination field and peering connection for the target
+- Then choose the peering connection you created
+- The connection has been successfully established
