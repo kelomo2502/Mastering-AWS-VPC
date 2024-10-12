@@ -30,3 +30,10 @@ Sign into AWS account
 - Creating the subnet
   To create the subnet, first click on the add new subnet button
 ![Add new subnet](./images/add-new-subnet.png)
+-Sucessgully creating subnets
+Two subnets have been created successfully. If you have CIDR overlaps, try resolve them by choosing a different range from the previous subnet created
+![Succesfully create subnets](./images/successfully_create_subnets.png)
+
+## Creating Internet Gateway
+- Navigate to the internet gateway options on the left side bar
+![Navigating to IGW tab](./images/finding_the_igw_tab.png)
