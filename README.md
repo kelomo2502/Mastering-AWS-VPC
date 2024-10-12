@@ -41,3 +41,6 @@ Two subnets have been created successfully. If you have CIDR overlaps, try resol
 ![Click in IGW](./images/igw_tab.png)
 - Fill in the igw configuration and click create igw
 ![IGW created](./images/igw_created.png)
+- Attach the IGW to your vPC
+  Click on the action tab, and click and attach to your vpc
+![Attch igw to vpc ](./images/attch_igw_to_vpc.png)
