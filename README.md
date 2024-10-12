@@ -37,3 +37,7 @@ Two subnets have been created successfully. If you have CIDR overlaps, try resol
 ## Creating Internet Gateway
 - Navigate to the internet gateway options on the left side bar
 ![Navigating to IGW tab](./images/finding_the_igw_tab.png)
+- Click on create internet gateway
+![Click in IGW](./images/igw_tab.png)
+- Fill in the igw configuration and click create igw
+![IGW created](./images/igw_created.png)
