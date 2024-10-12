@@ -10,4 +10,7 @@ This focuses on AWS vpc infrastructure, including subnets, gateways and routing 
 
 ![Sign into aws account](./images/sign_into_aws_account.png)
 
+- Navigate to the search bar and search for VPC
+  ![Search for VPC in the search bar](./images/search_vpc.png)
+
 
