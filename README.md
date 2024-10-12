@@ -13,4 +13,9 @@ This focuses on AWS vpc infrastructure, including subnets, gateways and routing 
 - Navigate to the search bar and search for VPC
   ![Search for VPC in the search bar](./images/search_vpc.png)
 
+- Navigate to create VPC tab and click on it
+  ![Create VPC](./images/create_vpc.png)
+
+- Select VPC only option, specify the ipv4 CIDR block 
+
 
