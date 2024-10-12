@@ -44,3 +44,10 @@ Two subnets have been created successfully. If you have CIDR overlaps, try resol
 - Attach the IGW to your vPC
   Click on the action tab, and click and attach to your vpc
 ![Attch igw to vpc ](./images/attch_igw_to_vpc.png)
+
+## Enabling internet connectivity by setting up route tables
+- Proceed to route tables option tab in th aws console
+![Locating route tables tab](./images/locating_route_table.png)
+
+- Click on create route table
+![](./images/creating-route-table.png)
